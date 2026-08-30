@@ -7,15 +7,15 @@
   <title>Mason</title>
   <link rel="icon" type="image/x-icon" href="{{ url_for('static', path='assets/favicon.ico') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <link rel="stylesheet" href="/static/css/style.css" />
+  <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}" />
 </head>
 
 <body>
   <!-- Шапка -->
   <header class="header">
     <a href="/" class="logo-wrapper logo-link">
-      <img src="/static/assets/logo.png" class="logo-img" alt="Логотип">
-      <div class="logo">MM BAUSTAV s.r.o</div>
+      <img src="{{ url_for('static', path='assets/logo.png') }}" class="logo-img" alt="Логотип">
+      <div class="logo">Mason</div>
     </a>
 
     <nav class="nav" id="navbar">
@@ -43,7 +43,7 @@
 
   <!-- Герой-секция -->
   <section id="hero" class="hero">
-    <img src="/static/assets/byt1.jpg" alt="hero" class="hero-bg">
+    <img src="{{ url_for('static', path='assets/byt1.jpg') }}" alt="hero" class="hero-bg">
     <div class="hero-content">
       <h1 class="fade-in" data-i18n="heroTitle">Ваш надёжный партнёр в строительстве</h1>
       <p class="fade-in" data-i18n="heroText">
@@ -55,7 +55,7 @@
     </div>
     <a href="#" class="chat-icon">
       <div class="img-wrapper">
-        <img src="/static/assets/chat-icon.svg" alt="Chat">
+        <img src="{{ url_for('static', path='assets/chat-icon.svg') }}" alt="Chat">
       </div>
     </a>
     <div class="chat-hint" id="chatHint">
@@ -114,32 +114,32 @@
 
         <div class="services-container" id="servicesContainer">
           <div class="service">
-            <img src="/static/assets/living-room.jpg" alt="Ремонт квартиры" />
+            <img src="{{ url_for('static', path='assets/living-room.jpg') }}" alt="Ремонт квартиры" />
             <h3 data-i18n="byt">Ремонт квартиры</h3>
             <p data-i18n="byt1">в Чехии</p>
           </div>
           <div class="service">
-            <img src="/static/assets/facade.jpg" alt="Фасадные работы" />
+            <img src="{{ url_for('static', path='assets/facade.jpg') }}" alt="Фасадные работы" />
             <h3 data-i18n="fasade">Фасадные работы</h3>
             <p data-i18n="fasade1">в Германии</p>
           </div>
           <div class="service">
-            <img src="/static/assets/restoration.jpg" alt="Восстановление памятников архитектуры" />
+            <img src="{{ url_for('static', path='assets/restoration.jpg') }}" alt="Восстановление памятников архитектуры" />
             <h3 data-i18n="pamet">Восстановление памятников</h3>
             <p data-i18n="pamet1">в Европе</p>
           </div>
           <div class="service">
-            <img src="/static/assets/byt.jpg" alt="Кровельные работы" />
+            <img src="{{ url_for('static', path='assets/byt.jpg') }}" alt="Кровельные работы" />
             <h3 data-i18n="krovrab">Кровельные работы</h3>
             <p data-i18n="krovrab1">в Нидерландах</p>
           </div>
           <div class="service">
-            <img src="/static/assets/byt1.jpg" alt="Интерьерный ремонт" />
+            <img src="{{ url_for('static', path='assets/byt1.jpg') }}" alt="Интерьерный ремонт" />
             <h3 data-i18n="interue">Интерьерный ремонт</h3>
             <p data-i18n="interue1">в Чехии</p>
           </div>
           <div class="service">
-            <img src="/static/assets/living-room.jpg" alt="Проектирование" />
+            <img src="{{ url_for('static', path='assets/living-room.jpg') }}" alt="Проектирование" />
             <h3 data-i18n="projecting">Проектирование</h3>
             <p data-i18n="projecting1">по всей Европе</p>
           </div>
@@ -185,7 +185,7 @@
         <span class="number" data-target="2">0</span>
         <p data-i18n="sycesspr">бригады специалистов</p>
       </div>
-      <div class="stat">
+      <div class="stat">  
         <span class="number" data-target="17">0</span>
         <p data-i18n="cliensreg">постоянных клиентов</p>
       </div>
@@ -232,7 +232,7 @@
     </div>
   </section>
 
-  <script src="/static/js/script.js"></script>
+  <script src="{{ url_for('static', path='js/script.js') }}"></script>
 </body>
 
 </html>
