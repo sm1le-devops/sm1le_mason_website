@@ -161,3 +161,8 @@ Email: {email}
 
 # --- Подключаем роутер ---
 app.include_router(router)
+
+app.get("/health")
+def health():
+    return {"status": "ok"}
+
